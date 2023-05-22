@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FCBE153B-31A0-4112-B460-D3E20F3CE5C4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>IOC</RootNamespace>
+    <AssemblyName>IOC</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Acasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Acasa.Designer.cs">
+      <DependentUpon>Acasa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="camerecatei.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="camerecatei.Designer.cs">
+      <DependentUpon>camerecatei.cs</DependentUpon>
+    </Compile>
+    <Compile Include="camerepisici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="camerepisici.Designer.cs">
+      <DependentUpon>camerepisici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Despre noi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Despre noi.Designer.cs">
+      <DependentUpon>Despre noi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfata.Designer.cs">
+      <DependentUpon>Interfata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="intrebaricatei.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="intrebaricatei.Designer.cs">
+      <DependentUpon>intrebaricatei.cs</DependentUpon>
+    </Compile>
+    <Compile Include="intrebaripisici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="intrebaripisici.Designer.cs">
+      <DependentUpon>intrebaripisici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rezervare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rezervare.Designer.cs">
+      <DependentUpon>Rezervare.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Acasa.resx">
+      <DependentUpon>Acasa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="camerecatei.resx">
+      <DependentUpon>camerecatei.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="camerepisici.resx">
+      <DependentUpon>camerepisici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Despre noi.resx">
+      <DependentUpon>Despre noi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfata.resx">
+      <DependentUpon>Interfata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="intrebaricatei.resx">
+      <DependentUpon>intrebaricatei.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="intrebaripisici.resx">
+      <DependentUpon>intrebaripisici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Rezervare.resx">
+      <DependentUpon>Rezervare.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buton x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picsart_22-12-22_23-07-07-072.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Picsart_22-12-22_23-07-07-0721.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cazare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\catel cazare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pisica cazare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\catei.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\standard-catei.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\premium-catei.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\standard-pisici.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\premium-pisici.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\premium-pisici1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pisica cazare1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pisici.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clasic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delux pisici.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
